@@ -1,6 +1,18 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
+// Include Composer's autoloader
+require 'vendor/autoload.php';
 
+// Import Monolog classes
+use Monolog\Logger;
+use Monolog\Handler\StreamHandler;
+
+// Create a logger instance
+$logger = new Logger('my_logger');
+$logger->pushHandler(new StreamHandler('app.log', Logger::INFO));
+
+// Log a message
+$logger->info('This is a Login Screen');
 ?>
 
 <!DOCTYPE html>
