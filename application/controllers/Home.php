@@ -11,7 +11,7 @@ class Home extends CI_Controller {
 		$this->load->library('session');
 		$this->load->helper('url');
 		$this->load->model('property_model');
-		$this->load->library('m_pdf');
+	//	$this->load->library('m_pdf');
 	}
 
 	public function index()
