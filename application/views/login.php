@@ -12,7 +12,7 @@ $logger = new Logger('my_logger');
 $logger->pushHandler(new StreamHandler('app.log', Logger::INFO));
 
 // Log a message
-$logger->info('This is a Login Screen');
+$logger->info('This is a Login Screen amit kamble');
 ?>
 
 <!DOCTYPE html>
